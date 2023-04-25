@@ -1,0 +1,43 @@
+* {
+margin: 0%;
+background-color: #002f2f;
+}
+
+.navbar {
+    height: 100px;
+    width: 94%;
+    display: flex;
+    background-color: #002121;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+    padding-left: 3%;
+    padding-right: 3%;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 75px;
+    width: 75px;
+    display: flex;
+    background-color: transparent;
+}
+
+.list_nav {
+    list-style-type: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+}
+
+.a_text {
+    background-color: transparent;
+    display: flex;
+
+}
+
+.a_img {
+    background-color: transparent;
+    display: flex;
+    
+}
