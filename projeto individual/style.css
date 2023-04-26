@@ -50,7 +50,6 @@ font-family: Manjari;
 
 .a_img {
     background-color: transparent;
-    display: flex;
     border-radius: 12px;
 }
 
@@ -70,7 +69,11 @@ font-family: Manjari;
     background-color: transparent;
 }
 
-.Perfil {
+.Sign_up {
+    background-color: transparent;
+}
+
+.Sign_in {
     background-color: transparent;
 }
 
@@ -90,4 +93,60 @@ font-family: Manjari;
 }
 
 /* Conteúdo do body */
+
+.mid1 {
+    width: 94%;
+}
+
+nav ul {
+    height:250px;
+    width:18%;
+}
+
+nav ul {
+    overflow:hidden;
+    overflow-y:scroll;
+    border: solid 1px white;
+    padding-left: 1%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: transparent;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 25px;
+    padding-left: 4%;
+    padding-top: 3%;
+}
+
+nav ul li {
+    list-style: none;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-bottom: solid 1px black;
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+nav ul li a:hover{
+    color:  #FF7A00;
+}
+
+.a_textList {
+    list-style: none;
+    border-bottom: solid 1px black;
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 20px;
+}
 
