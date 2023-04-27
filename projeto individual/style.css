@@ -46,7 +46,7 @@ font-family: Manjari;
 }
 
 .a_text:hover {
-    color: #FF7A00;
+    color: #FFDA04;
 }
 
 .a_img {
@@ -55,7 +55,7 @@ font-family: Manjari;
 }
 
 .a_img:hover {
-    background-color: #FF7A00;
+    background-color: #FFDA04;
 }
 
 .Home {
@@ -145,12 +145,16 @@ nav ul li {
 }
 
 nav ul li a:hover{
-    color:  #FF7A00;
+    color:  #FFDA04;
 }
 
 .top_jogados {
+    padding-top: 40px;
     height: 320px;
     width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .a_textList {
@@ -170,7 +174,7 @@ nav ul li a:hover{
 }
 
 .button_jogar {
-    background-color: #FF7A00;
+    background-color: #FFDA04;
     width: 180px;
     height: 45px;
     font-size: 25px;
@@ -187,7 +191,7 @@ nav ul li a:hover{
     font-size: 45px;
     width: 190px;
     height: 55px;
-    border: solid 3px #FF7A00;
+    border: solid 3px #FFDA04;
 }
 
 .button_versus {
@@ -212,7 +216,7 @@ nav ul li a:hover{
 }
 
 .button_ {
-    background-color: #00FF90;
+    background-color: #ff1301;
     width: 180px;
     height: 45px;
     font-size: 25px;
@@ -229,5 +233,46 @@ nav ul li a:hover{
     font-size: 45px;
     width: 190px;
     height: 55px;
-    border: solid 3px #00FF90;
+    border: solid 3px #ff1301;
 }
+
+ul::-webkit-scrollbar-thumb {
+    background-color: #002f2f;    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+    border: solid 1px white;
+}
+
+ul::-webkit-scrollbar-track {
+    background: #002121;     /* color of the tracking area */
+    border-left: solid 1px white;
+}
+
+ul::-webkit-scrollbar {
+    width: auto;
+}
+
+body::-webkit-scrollbar {
+    width: auto;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #002121;     /* color of the tracking area */
+    border-left: solid 1px white;
+
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #002f2f;    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+    border: solid 1px white;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+  }
+
+  ul::-webkit-scrollbar-thumb:hover {
+    background-color: white;
+  }
+
+  
