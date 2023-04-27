@@ -19,6 +19,7 @@ font-family: Manjari;
     padding-left: 3%;
     padding-right: 3%;
     border-bottom: solid 1px white;
+    justify-content: space-between;
 }
 
 .logo {
@@ -80,9 +81,10 @@ font-family: Manjari;
 .navbar_items {
     background-color: transparent;
     display: flex;
-    justify-content: space-around;
-    padding-left: 45px;
-    width: 500%;
+    flex-direction: row;
+    justify-content:right;
+    justify-content: space-between;
+    width: 50%;
 }
 
 .navbar_logo {
@@ -96,14 +98,16 @@ font-family: Manjari;
 
 .mid1 {
     width: 94%;
+    height: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 nav ul {
-    height:250px;
-    width:120%;
+    height:100%;
+    max-height: 342px;
+    width:100%;
 }
 
 nav ul {
@@ -144,16 +148,25 @@ nav ul li a:hover{
     color:  #FF7A00;
 }
 
+.top_jogados {
+    height: 320px;
+    width: 290px;
+}
+
 .a_textList {
     list-style: none;
     color: white;
     text-decoration: none;
     font-weight: 200;
     font-size: 20px;
+    background-color: transparent;
 }
 
 .options {
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .button_jogar {
@@ -162,20 +175,59 @@ nav ul li a:hover{
     height: 45px;
     font-size: 25px;
     border: none;
-    border-radius: 45px;
-    position: relative;
+    border-radius: 18px;
     text-decoration: none;
     font-weight: 200;
     justify-content: center;
-    align-items: center;
+    border: solid 1px white;
 }
 
 .button_jogar:hover {
     background-color: white;
     font-size: 45px;
-    color: #FF7A00;
     width: 190px;
     height: 55px;
+    border: solid 3px #FF7A00;
+}
+
+.button_versus {
+    background-color: #1957FF;
+    width: 180px;
+    height: 45px;
+    font-size: 25px;
+    border: none;
+    border-radius: 18px;
     text-decoration: none;
     font-weight: 200;
+    justify-content: center;
+    border: solid 1px white;
+}
+
+.button_versus:hover {
+    background-color: white;
+    font-size: 45px;
+    width: 190px;
+    height: 55px;
+    border: solid 3px #1957FF;
+}
+
+.button_ {
+    background-color: #00FF90;
+    width: 180px;
+    height: 45px;
+    font-size: 25px;
+    border: none;
+    border-radius: 18px;
+    text-decoration: none;
+    font-weight: 200;
+    justify-content: center;
+    border: solid 1px white;
+}
+
+.button_:hover {
+    background-color: white;
+    font-size: 45px;
+    width: 190px;
+    height: 55px;
+    border: solid 3px #00FF90;
 }
