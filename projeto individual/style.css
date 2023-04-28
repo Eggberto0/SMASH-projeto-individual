@@ -97,7 +97,7 @@ font-family: Manjari;
 /* Conteúdo do body */
 
 .mid1 {
-    width: 94%;
+    width: 100%;
     height: 500px;
     display: flex;
     flex-direction: row;
@@ -171,69 +171,70 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: end;
 }
 
 .button_jogar {
-    background-color: #FFDA04;
-    width: 180px;
-    height: 45px;
-    font-size: 25px;
-    border: none;
+    background-color: #ff1301;
+    width: 600px;
+    height: 85px;
+    font-size: 35px;
     border-radius: 18px;
+    border-end-end-radius: inherit;
+    border-start-end-radius: inherit;
     text-decoration: none;
     font-weight: 200;
     justify-content: center;
     border: solid 1px white;
+    border-right: none;
 }
 
 .button_jogar:hover {
     background-color: white;
     font-size: 45px;
-    width: 190px;
-    height: 55px;
-    border: solid 3px #FFDA04;
+    border: solid 3px #ff1301;
 }
 
 .button_versus {
     background-color: #1957FF;
-    width: 180px;
-    height: 45px;
-    font-size: 25px;
-    border: none;
+    width: 600px;
+    height: 85px;
+    font-size: 35px;
     border-radius: 18px;
+    border-end-end-radius: inherit;
+    border-start-end-radius: inherit;
     text-decoration: none;
     font-weight: 200;
     justify-content: center;
     border: solid 1px white;
+    border-right: none;
 }
 
 .button_versus:hover {
     background-color: white;
     font-size: 45px;
-    width: 190px;
-    height: 55px;
     border: solid 3px #1957FF;
 }
 
-.button_ {
-    background-color: #ff1301;
-    width: 180px;
-    height: 45px;
-    font-size: 25px;
-    border: none;
+.button_galeria {
+    background-color: #FFDA04;
+    width: 600px;
+    height: 85px;
+    font-size: 35px;
     border-radius: 18px;
+    border-end-end-radius: inherit;
+    border-start-end-radius: inherit;
     text-decoration: none;
     font-weight: 200;
     justify-content: center;
     border: solid 1px white;
+    border-right: none;
 }
 
-.button_:hover {
+.button_galeria:hover {
     background-color: white;
     font-size: 45px;
-    width: 190px;
-    height: 55px;
-    border: solid 3px #ff1301;
+    border: solid 3px #FFDA04;
 }
 
 ul::-webkit-scrollbar-thumb {
@@ -275,4 +276,3 @@ body::-webkit-scrollbar {
     background-color: white;
   }
 
-  
