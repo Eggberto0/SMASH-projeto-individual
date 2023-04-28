@@ -70,11 +70,11 @@ font-family: Manjari;
     background-color: transparent;
 }
 
-.Sign_up {
+.cadastrar {
     background-color: transparent;
 }
 
-.Sign_in {
+.entrar {
     background-color: transparent;
 }
 
@@ -254,25 +254,154 @@ ul::-webkit-scrollbar {
 
 body::-webkit-scrollbar {
     width: auto;               /* width of the entire scrollbar */
-  }
+}
   
-  body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     background: #002121;     /* color of the tracking area */
     border-left: solid 1px white;
 
-  }
+}
   
-  body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: #002f2f;    /* color of the scroll thumb */
     border-radius: 5px;       /* roundness of the scroll thumb */
     border: solid 1px white;
-  }
+}
 
-  body::-webkit-scrollbar-thumb:hover {
+body::-webkit-scrollbar-thumb:hover {
     background-color: white;
-  }
+}
 
-  ul::-webkit-scrollbar-thumb:hover {
+ul::-webkit-scrollbar-thumb:hover {
     background-color: white;
-  }
+}
 
+/* tela de login */
+
+.login_screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.login_claro {
+    width: 50%;
+    height: 100vh;
+}
+
+.login_info {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    background-color: #002121;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_texto {
+    width: 300px;
+    height: 60px;
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 45px;
+    background-color: grey;
+    border-radius: 20px;
+    border-style: none;
+    display: flex;
+    text-align: center;
+    border: solid 3px white;
+}
+
+.spam_text {
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 40px;
+    background-color: transparent;
+    margin: 10px;
+}
+
+.esqueci {
+    background-color: transparent;
+    display: flex;
+    width: 300px;
+    height: 60px;
+    justify-content: end;
+    margin-top: 5px;
+}
+
+.a_text_esqueci {
+    background-color: transparent;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.a_text_esqueci:hover {
+    color: #FFDA04;
+}
+
+.button_login {
+    width: 150px;
+    height: 40px;
+    color: black;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border-style: none;
+    text-align: center;
+    text-justify: center;
+}
+
+.button_login:hover {
+    background-color: #FFDA04;
+}
+
+.image_login {
+    width: 400px;
+    padding-left:   29%;
+    padding-top:    25%;
+}
+
+.voltar {
+    display: flex;
+    background-color: transparent;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    size: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.a_voltar:hover {
+    color: #FFDA04;
+}
+
+.a_voltar {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.voltar_png {
+    width: 15px;
+    background-color: transparent;
+}
+
+.voltar:hover {
+    color: #FFDA04;
+}
