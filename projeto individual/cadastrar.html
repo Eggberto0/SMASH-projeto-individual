@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt - BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOST - Cadastro</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="images/block (2).png" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="login_screen">
+        <button class="voltar" onclick="window.location.href = 'index.html'"></button>
+        <div calss="login_claro">
+            <img src="images/block (2).png" alt="" class="image_login"><br>
+        </div><!--login_claro-->
+        <spam class="spam_text_logo">WOST</spam>
+        <div class="login_info">
+            <spam class="spam_text">Nome de usuário:</spam> <input type="text" class="input_texto" id="inp_nome">
+            <spam class="spam_text">E-mail</spam> <input type="text" class="input_texto" id="inp_email">
+            <spam class="spam_text">Senha:</spam> <input type="password" class="input_texto" id="inp_senha">
+            <spam class="spam_text">Confirmar senha:</spam> <input type="password" class="input_texto" id="inp_confirm_senha">
+            <br>
+            <button class="button_login" onclick="tentar_login()">Criar conta</button>
+        </div><!--login_info-->
+    </div><!--login_screen-->
+
+</body>
+</html>
+
+<script>
+
+    function tentar_login() {
+
+        var email = inp_email.value
+
+        if (inp_nome.value == "") {
+            alert("Insira um nome válido")
+        } else if (inp_senha.value == "") {
+            alert("Insira uma senha válida")
+        } else if (inp_email.value == "" || email.indexOf("@") == -1 || email.indexOf("@") <= 1) {
+            alert("Insira um e-mail válido")
+        } else if (inp_senha.value != inp_confirm_senha.value) {
+            alert("As senhas não coincidem")
+        } else {
+            window.location.href = 'index_logado.html'
+        }
+    }
+
+</script>

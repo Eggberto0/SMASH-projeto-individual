@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari&display=swap');
+
+* {
+margin: 0%;
+background-color: #243447;
+font-family: Manjari;
+}
+
+.voltar {
+    display: flex;
+    background-image: url("images/desfazer.png");
+        background-position: center;
+        background-size: 35px;
+        background-repeat: no-repeat;
+    background-color: transparent;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
+    border-style: none;
+    margin: 5px;
+    transition: all 0.3s;
+}
+
+.voltar:hover {
+    background-color: #FFDA04;
+    background-image: url("images/desfazer\ \(1\).png");
+        background-position: center;
+        background-size: 35px;
+        background-repeat: no-repeat;
+    cursor: pointer;
+    color: black;
+    margin: 5px;
+}
+
+.perfil_screen {
+    display: flex;
+    justify-content: end;
+}
+
+.perfil_options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 30vw;
+    align-items: center;
+}
+
+.perfil_info {
+    background-color: #141d26;
+    display: flex;
+    height: 100vh;
+    width: 70vw;
+}
+
+.text_perfil_info {
+    color: white;
+    font-weight: 200;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 25px;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: #FFDA04;
+}
+
+/* cadastro */
+
+.login_screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+
+.login_claro {
+    width: 50%;
+    height: 100vh;
+}
+
+.login_info {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    background-color: #141d26;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_texto {
+    width: 300px;
+    height: 60px;
+    color: black;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 45px;
+    background-color: white;
+    border-radius: 20px;
+    border-style: none;
+    display: flex;
+    text-align: center;
+    text-justify: center;
+}
+
+.spam_text {
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 40px;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.esqueci {
+    background-color: transparent;
+    display: flex;
+    align-items: start;
+    width: auto;
+    height: 60px;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-left: 150px;
+}
+
+.a_text_esqueci {
+    background-color: transparent;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.a_text_esqueci:hover {
+    color: #FFDA04;
+}
+
+.button_login {
+    width: 150px;
+    height: 40px;
+    color: black;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border-style: none;
+    text-align: center;
+    text-justify: center;
+    transition: all 0.3s;
+}
+
+.button_login:hover {
+    background-color: #FFDA04;
+    cursor: pointer;
+}
+
+.image_login {
+    width: 400px;
+    padding-left:   29%;
+    padding-top:    25%;
+}
+
+.voltar {
+    display: flex;
+    background-image: url("images/desfazer.png");
+        background-position: center;
+        background-size: 35px;
+        background-repeat: no-repeat;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+    size: 15px;
+    flex-direction: column;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
+    border-style: none;
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 15px;
+    margin: 5px;
+    transition: all 0.3s;
+}
+
+.voltar:hover {
+    background-color: #FFDA04;
+    background-image: url("images/desfazer\ \(1\).png");
+        background-position: center;
+        background-size: 35px;
+        background-repeat: no-repeat;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.spam_text_logo {
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 100px;
+    background-color: transparent;
+    margin-top: 520px;
+    margin-left: 175px;
+    position: absolute;
+}

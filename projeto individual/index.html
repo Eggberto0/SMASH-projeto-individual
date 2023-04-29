@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>WOST - home</title>
-    <link rel="shortcut icon" href="images/block laranja.png" type="image/x-icon">
+    <title>WOST - Home</title>
+    <link rel="shortcut icon" href="images/block (2).png" type="image/x-icon">
 </head>
 <body>
     
@@ -17,70 +17,46 @@
             </li>
         </div>
         <div class="navbar_items">
-            <div class="Home">
-                <li class="list_nav">
-                    <a class="a_text" href="index.html">Home</a>
-                </li>
-            </div>
-            <div class="Ranking">
-                <li class="list_nav">
-                    <a href="" class="a_text">Ranking</a>
-                </li>
-            </div>
-            <div class="Studio">
-                <li class="list_nav">
-                    <a href="" class="a_text">Studio</a>
-                </li>
-            </div>
             <div class="cadastrar">
                 <li class="list_nav">
-                    <a href="cadastro.html" class="a_text">Cadastrar</a>
+                    <a href="cadastrar.html" class="a_text">Cadastrar</a>
                 </li>
             </div>
             <div class="entrar">
                 <li class="list_nav">
-                    <a href="" class="a_text">Entrar</a>
+                    <a href="entrar.html" class="a_text">Entrar</a>
                 </li>
             </div>
         </div><!--navbar_items-->
     </div><!--navbar-->
+    <div class="aviso_login" id="div_aviso"></div>
 
     <div class="mid1">
-        <div class="top_jogados">
-            <header>Most Popular</header>
-                <nav>
-                    <ul>
-                    <li>Top #1 - <a class="a_textList">musica 1</a></li>
-                    <li>Top #2 - <a class="a_textList">musica 2</a></li>
-                    <li>Top #3 - <a class="a_textList">musica 3</a></li>
-                    <li>Top #4 - <a class="a_textList">musica 4</a></li>
-                    <li>Top #5 - <a class="a_textList">musica 5</a></li>
-                    <li>Top #6 - <a class="a_textList">musica 6</a></li>
-                    <li>Top #7 - <a class="a_textList">musica 7</a></li>
-                    <li>Top #8 - <a class="a_textList">musica 8</a></li>
-                    <li>Top #9 - <a class="a_textList">musica 9</a></li>
-                    <li>Top #10 - <a class="a_textList">musica 10</a></li>
-                    <li>Top #11 - <a class="a_textList">musica 11</a></li>
-                    <li>Top #12 - <a class="a_textList">musica 12</a></li>
-                    <li>Top #13 - <a class="a_textList">musica 13</a></li>
-                    <li>Top #14 - <a class="a_textList">musica 14</a></li>
-                    <li>Top #15 - <a class="a_textList">musica 15</a></li>
-                    </ul>
-                </nav>
-            <footer></footer>
-        </div><!--top_jogados-->
         <div class="options">
-            <a href=""><button class="button_jogar">Jogar</button></a>
-            <a href=""><button class="button_versus">Versus</button></a>
-            <a href=""><button class="button_galeria">Galeria</button></a>
+            <button class="button_jogar" onclick="button_need_login()">Jogar</button>
+            <button class="button_versus" onclick="button_need_login()">Versus</button>
+            <button class="button_galeria" onclick="button_need_login()">Galeria</button>
         </div><!--options-->
     </div><!--mid1-->
+
+
+    <div class="popup disable" id="popup_sim">
+        <div class="fechar-popup"><a href="" class="a_text_close" style="background-color: transparent;">x</a></div>
+        <div class="conteudo-popup">
+            <div class="titulo-popup">
+                <h1 style="color: #ff1301;">É necessário uma conta<br>para jogar</h1>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 </html>
 
 <script>
 
-
+function button_need_login() {
+        popup_sim.classList.remove("disable");
+    }
 
 </script>

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WOST - Sign in</title>
+    <title>WOST - Entrar</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/block laranja.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/block (2).png" type="image/x-icon">
 </head>
 <body>
     
@@ -17,12 +17,12 @@
         </div><!--login_claro-->
         <spam class="spam_text_logo">WOST</spam>
         <div class="login_info">
-            <spam class="spam_text">Nome de usuário:</spam> <input type="text" class="input_texto">
-            <spam class="spam_text">Senha:</spam> <input type="password" class="input_texto">
+            <spam class="spam_text">Nome de usuário:</spam> <input type="text" class="input_texto" id="inp_nome">
+            <spam class="spam_text">Senha:</spam> <input type="password" class="input_texto" id="inp_senha">
             <div class="esqueci">
                 <a href="" class="a_text_esqueci">Esqueci minha senha</a>
             </div><!--esqueci-->
-            <button class="button_login" onclick="login()">Entrar</button>
+            <button class="button_login" onclick="tentar_login()">Entrar</button>
         </div><!--login_info-->
     </div><!--login_screen-->
 
@@ -31,8 +31,14 @@
 
 <script>
 
-    function href() {
-        
+    function tentar_login() {
+        if (inp_nome.value == "") {
+            alert("Insira um nome válido")
+        } else if (inp_senha.value == "") {
+            alert("Insira uma senha válida")
+        } else {
+            window.location.href = 'index_logado.html'
+        }
     }
 
 </script>

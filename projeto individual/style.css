@@ -2,7 +2,7 @@
 
 * {
 margin: 0%;
-background-color: #002f2f;
+background-color: #243447;
 font-family: Manjari;
 }
 
@@ -12,7 +12,21 @@ font-family: Manjari;
     height: 100px;
     width: 94%;
     display: flex;
-    background-color: #002121;
+    background-color: #141d26;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-bottom: solid 1px white;
+    justify-content: space-between;
+}
+
+.navbar_logado {
+    height: 100px;
+    width: 94%;
+    display: flex;
+    background-color: #141d26;
     align-items: center;
     position: relative;
     flex-direction: row;
@@ -39,10 +53,15 @@ font-family: Manjari;
 .a_text {
     background-color: transparent;
     display: flex;
-    color: white;
+    flex-direction: column;
+    justify-content: center;
     text-decoration: none;
+    color: white;
     font-weight: 200;
     font-size: 25px;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 0px;
 }
 
 .a_text:hover {
@@ -52,25 +71,18 @@ font-family: Manjari;
 .a_img {
     background-color: transparent;
     border-radius: 12px;
+    transition: all 0.3s ease-in-out;
 }
 
 .a_img:hover {
     background-color: #FFDA04;
 }
 
-.Home {
-    background-color: transparent;
-}
-
-.Ranking {
-    background-color: transparent;
-}
-
-.Studio {
-    background-color: transparent;
-}
-
 .cadastrar {
+    background-color: transparent;
+}
+
+.perfil {
     background-color: transparent;
 }
 
@@ -82,9 +94,16 @@ font-family: Manjari;
     background-color: transparent;
     display: flex;
     flex-direction: row;
-    justify-content:right;
-    justify-content: space-between;
-    width: 50%;
+    justify-content: space-around;
+    width: 25%;
+}
+
+.navbar_logado .navbar_items {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 25%;
 }
 
 .navbar_logo {
@@ -101,69 +120,7 @@ font-family: Manjari;
     height: 500px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
-
-nav ul {
-    height:100%;
-    max-height: 342px;
-    width:100%;
-}
-
-nav ul {
-    overflow:hidden;
-    overflow-y:scroll;
-    border: solid 1px white;
-    padding-left: 1%;
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-header {
-    background-color: transparent;
-    display: flex;
-    color: white;
-    text-decoration: none;
-    font-weight: 200;
-    font-size: 25px;
-    padding-left: 70px;
-    padding-top: 30px;
-}
-
-nav ul li {
-    list-style: none;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    border-bottom: solid 1px black;
-    color: white;
-    text-decoration: none;
-    font-weight: 200;
-    font-size: 20px;
-    margin-left: 0;
-}
-
-nav ul li a:hover{
-    color:  #FFDA04;
-}
-
-.top_jogados {
-    padding-top: 40px;
-    height: 320px;
-    width: 290px;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-}
-
-.a_textList {
-    list-style: none;
-    color: white;
-    text-decoration: none;
-    font-weight: 200;
-    font-size: 20px;
-    background-color: transparent;
 }
 
 .options {
@@ -171,7 +128,6 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: end;
 }
 
 .button_jogar {
@@ -180,14 +136,12 @@ nav ul li a:hover{
     height: 85px;
     font-size: 35px;
     border-radius: 18px;
-    border-end-end-radius: inherit;
-    border-start-end-radius: inherit;
     text-decoration: none;
     font-weight: 200;
     justify-content: center;
     border: solid 1px white;
-    border-right: none;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .button_jogar:hover {
@@ -202,14 +156,12 @@ nav ul li a:hover{
     height: 85px;
     font-size: 35px;
     border-radius: 18px;
-    border-end-end-radius: inherit;
-    border-start-end-radius: inherit;
     text-decoration: none;
     font-weight: 200;
     justify-content: center;
     border: solid 1px white;
-    border-right: none;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .button_versus:hover {
@@ -224,14 +176,12 @@ nav ul li a:hover{
     height: 85px;
     font-size: 35px;
     border-radius: 18px;
-    border-end-end-radius: inherit;
-    border-start-end-radius: inherit;
     text-decoration: none;
     font-weight: 200;
     justify-content: center;
     border: solid 1px white;
-    border-right: none;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .button_galeria:hover {
@@ -240,42 +190,24 @@ nav ul li a:hover{
     border: solid 3px #FFDA04;
 }
 
-ul::-webkit-scrollbar-thumb {
-    background-color: #002f2f;    /* color of the scroll thumb */
-    border-radius: 5px;       /* roundness of the scroll thumb */
-    border: solid 1px white;
-}
-
-ul::-webkit-scrollbar-track {
-    background: #002121;     /* color of the tracking area */
-    border-left: solid 1px white;
-}
-
-ul::-webkit-scrollbar {
-    width: auto;
-}
-
 body::-webkit-scrollbar {
     width: auto;               /* width of the entire scrollbar */
 }
   
 body::-webkit-scrollbar-track {
-    background: #002121;     /* color of the tracking area */
+    background: #141d26;     /* color of the tracking area */
     border-left: solid 1px white;
 
 }
   
 body::-webkit-scrollbar-thumb {
-    background-color: #002f2f;    /* color of the scroll thumb */
+    background-color: #243447;    /* color of the scroll thumb */
     border-radius: 5px;       /* roundness of the scroll thumb */
     border: solid 1px white;
+    transition: all 0.3s;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: white;
-}
-
-ul::-webkit-scrollbar-thumb:hover {
     background-color: white;
 }
 
@@ -298,7 +230,7 @@ ul::-webkit-scrollbar-thumb:hover {
     display: flex;
     width: 50%;
     height: 100vh;
-    background-color: #002121;
+    background-color: #141d26;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -346,6 +278,7 @@ ul::-webkit-scrollbar-thumb:hover {
     text-decoration: none;
     font-weight: 200;
     font-size: 15px;
+    transition: all 0.3s;
 }
 
 .a_text_esqueci:hover {
@@ -427,4 +360,86 @@ ul::-webkit-scrollbar-thumb:hover {
     margin-top: 520px;
     margin-left: 175px;
     position: absolute;
+}
+
+
+
+.popup {
+    background-color: rgb(0,0,0,0.5);
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+.disable{
+    display: none;
+}
+
+.conteudo-popup {
+    text-align: center;
+    width: 400px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 15px;
+    border: 3px solid #ff1301;
+    padding: 30px;
+}
+
+.fechar-popup {
+    position: relative;
+    top: -70px;
+    right: -445px;
+    background-color: transparent;
+}
+.fechar-popup a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.titulo-popup h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+.titulo-popup {
+    text-align: center;
+    margin-top: 30px;
+    background-color: transparent;
+}
+
+.a_text_close {
+    background-color: transparent;
+    display: flex;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.a_text_close:hover {
+    color: #ff1301;
+}
+
+.foto_perfil {
+    background-image: url("images/account\ \(1\).png");
+        background-position: center;
+        background-size: 55px;
+        background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.foto_perfil:hover {
+    background-image: url("images/account\ \(2\).png");
+        background-position: center;
+        background-size: 60px;
+        background-repeat: no-repeat;
 }
