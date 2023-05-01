@@ -5,6 +5,8 @@
     margin: 0;
 }
 
+/* Navbbar */
+
 .navbar {
     background-color: #0a0a0a;
     width: 100vw;
@@ -42,11 +44,10 @@
         background-repeat: no-repeat;
     width: 130px;
     height: 85px;
-    padding: 15px;
 }
 
 .navbar_opcoes {
-    padding: 15px;
+    padding: 25px;
     display: flex;
     width: 100px;
     justify-content: space-around;
@@ -66,9 +67,12 @@ a:hover {
     color: #fe0016;
 }
 
+/* Página */
+
 .container_index {
     width: 100%;
     height: 5500px;
+    padding-top: 15vh;
 }
 
 .container_image {
@@ -83,10 +87,12 @@ a:hover {
 
 .container_info {
     display: flex;
+    flex-direction: column;
     background-color: #0a0a0a;
     height: 40%;
     width: 100%;
-    justify-content: center;
+    padding-top: 75px;
+    align-items: center;
 }
 
 .bottom {
@@ -99,34 +105,89 @@ a:hover {
 .carrossel {
     display: flex;
     flex-direction: row;
-    list-style: none;
     width: 850px;
     height: 450px;
-    overflow: hidden;
-    margin-top: 180px;
+
     border: solid white 1px;
     align-items: center;
+    justify-content: start;
+    transition: all 500ms ease;
 }
 
 .carrossel_image {
     display: flex;
     padding: 40px;
     align-items: center;
+    flex: 0 0 auto;
+    width: 100%;
 }
 
 .character_picture {
     height: 300px;
     width: 300px;
-    padding-right: 45px;
+    
 }
 
 .carrossel_info {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: black;
     font-size: 23px;
     font-weight: 200;
-    background-color: #fe0016;
+    background-color: white;
     width: 465px;
     height: 400px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color: white;
+    background-color: #fe0016;
+    width: 465px;
+    height: 80px;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom: solid 4px black;
+}
+
+.emblem {
+    width: 175px;
+    height: 175px;
+}
+
+.carrossel_section {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 22%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contagem {
+    color: white;
+    position: static;
+}
+
+.side_button {
+    width: 45px;
+    height: 45px;
+    color: black;
+    font-size: 55px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: Carlito;
+    border-style: none;
+    background-color: white;
+    cursor: pointer;
+    transition: all ease-in-out 0.2s;
+}
+
+.side_button:hover {
+    color: white;
+    background-color: #fe0016;
 }
