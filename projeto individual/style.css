@@ -443,3 +443,27 @@ body::-webkit-scrollbar-thumb:hover {
         background-size: 60px;
         background-repeat: no-repeat;
 }
+
+.button_como_jogar {
+    position: absolute;
+    display: flex;
+    margin-top: 120px;
+    margin-left: 20px;
+    height: 35px;
+    width: 35px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 200;
+    font-size: 25px;
+    border-radius: 35px;
+    border: solid 2px white;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.button_como_jogar:hover {
+    color: black;
+    background-color: #FFDA04;
+    cursor: pointer;
+}

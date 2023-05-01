@@ -9,7 +9,11 @@
     <link rel="shortcut icon" href="images/block (2).png" type="image/x-icon">
 </head>
 <body>
-    
+
+    <button class="button_como_jogar" onclick="como_jogar()">
+        ?
+    </button><!--como_jogar_button-->
+
     <div class="navbar">
         <div class="navbar_logo">
             <li class="list_nav">     
@@ -49,6 +53,16 @@
         </div>
     </div>
 
+    <div class="popup disable" id="popup_como">
+        <div class="fechar-popup"><a href="" class="a_text_close" style="background-color: transparent;">x</a></div>
+        <div class="conteudo-popup">
+            <div class="titulo-popup">
+                <h1 style="color: #ff1301;">Como jogar?</h1>
+                entrando em partida, uma musica começará a tocar junto de um contador. Escolha entre uma das 4 opções de jogos da qual a musica pertence
+            </div>
+        </div>
+    </div>
+
 
 </body>
 </html>
@@ -57,6 +71,10 @@
 
 function button_need_login() {
         popup_sim.classList.remove("disable");
+    }
+
+function como_jogar() {
+        popup_como.classList.remove("disable");
     }
 
 </script>
