@@ -42,8 +42,8 @@
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
-    width: 130px;
-    height: 85px;
+    width: 190px;
+    height: 125px;
 }
 
 .navbar_opcoes {
@@ -107,8 +107,7 @@ a:hover {
     flex-direction: row;
     width: 850px;
     height: 450px;
-
-    border: solid white 1px;
+    border: solid white 4px;
     align-items: center;
     justify-content: start;
     transition: all 500ms ease;
@@ -118,7 +117,6 @@ a:hover {
     display: flex;
     padding: 40px;
     align-items: center;
-    flex: 0 0 auto;
     width: 100%;
 }
 
