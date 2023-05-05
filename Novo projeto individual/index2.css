@@ -17,6 +17,7 @@
     justify-content: space-between;
     border-bottom: #fe0016 solid 2px;
     position: fixed;
+    z-index: 1;
 }
 
 .navbar_logo {
@@ -70,8 +71,9 @@ a:hover {
 
 .container_index {
     width: 100%;
-    height: 5500px;
+    height: 6000px;
     padding-top: 15vh;
+    overflow: hidden;
 }
 
 .container_image {
@@ -81,14 +83,14 @@ a:hover {
         background-size: 100%;
         background-repeat: no-repeat;
     width: 100%;
-    height: 13%;
+    height: 12.5%;
 }
 
 .container_info {
     display: flex;
     flex-direction: column;
     background-color: #0a0a0a;
-    height: 40%;
+    height: auto;
     width: 100%;
     padding-top: 75px;
     align-items: center;
@@ -118,27 +120,68 @@ h1 {
     width: 98vw;
     height: 100%;
     display: block;
-    background-color: aqua;
 }
 
 .image_character {
-    height: 450px;
+    height: 300px;
+    transition: all ease-in-out 0.2s;
+    background-color: transparent;
+}
+
+.image_character:hover {
+    height: 350px;
+    background-color: #fe0016;
 }
 
 .line {
-    padding-top: 5px;
-    gap: 5px;
     width: 100%;
     height: fit-content;
-    background-color: #fe0016;
+    background-color: #afafaf;
     display: flex;
 }
 
 .image_box {
     width: 10%;
-    height: 450px;
+    height: 300px;
     overflow: hidden;
     align-items: center;
     display: flex;
     justify-content: center;
+}
+ 
+.image_widescreen {
+    width: 100%;
+    display: flex;
+}
+
+.image_gigante {
+    animation: andar 100s infinite linear;
+}
+
+@keyframes andar {
+    0% {
+        margin-left: 0;
+    }
+    50% {
+        margin-left: -100vw;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+.logo_absoluta {
+    position: absolute;
+    padding-top: 580px;
+    padding-left: 50px;
+}
+
+.logo_absoluta_image {
+    width: 600px;
+}
+
+.divisao {
+    width: 450px;
+    height: 100px;
+    background-color: #fe0016;
 }
