@@ -144,6 +144,14 @@ h1 {
     width: fit-content;
 }
 
+.dlc{
+    background-color: #fe0016;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
 .image_box {
     width: 150px;
     height: 435px;
