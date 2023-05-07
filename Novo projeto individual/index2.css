@@ -77,13 +77,13 @@ a:hover {
 }
 
 .container_image {
-    background-image: url('images/thumb-1920-927337.png');
-        background-position-y: 2%;
-        background-position-x: center;
-        background-size: 100%;
-        background-repeat: no-repeat;
     width: 100%;
-    height: 12.5%;
+    height: 700px;
+    background-color: #0a0a0a;
+}
+
+.image_inicial {
+    width: 100%;
 }
 
 .container_info {
@@ -92,7 +92,7 @@ a:hover {
     background-color: #0a0a0a;
     height: auto;
     width: 100%;
-    padding-top: 75px;
+    padding-top: 70px;
     align-items: center;
     border-bottom: solid #0a0a0a 7px;
 }
@@ -117,15 +117,17 @@ h1 {
 }
 
 .characters {
-    width: 98vw;
+    width: 100%;
     height: 100%;
     display: block;
+    overflow-x: scroll;
+    margin-top: 10px;
 }
 
 .image_character {
     height: 300px;
     transition: all ease-in-out 0.2s;
-    background-color: transparent;
+    background-color: #bfbfbf;
 }
 
 .image_character:hover {
@@ -134,18 +136,38 @@ h1 {
 }
 
 .line {
-    width: 100%;
     height: fit-content;
-    background-color: #afafaf;
+    background-color: #0a0a0a;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
 }
 
 .image_box {
-    width: 10%;
-    height: 300px;
+    width: 150px;
+    height: 435px;
     overflow: hidden;
     align-items: center;
     display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-right: #0a0a0a solid 1px;
+    border-left: #0a0a0a solid 1px;
+}
+
+.rotulo {
+    background-color: #0a0a0a;
+    position: relative;
+    color: white;
+    font-family: Carlito;
+    font-size: 25px;
+    font-weight: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: end;
     justify-content: center;
 }
  
@@ -181,7 +203,17 @@ h1 {
 }
 
 .divisao {
-    width: 450px;
-    height: 100px;
-    background-color: #fe0016;
+    width: 800px; 
+    height: 50px; 
+    -webkit-transform: skew(30deg); 
+    background: #fe0016;
+}
+
+.div_sao {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    overflow: hidden;
+    padding-top: 675px;
+    padding-left: 680px;
 }
