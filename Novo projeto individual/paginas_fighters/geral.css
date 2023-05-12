@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Carlito:wght@700&family=Manjari&display=swap");
+
+* {
+    font-family: Carlito;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Navbbar */
+
+.navbar {
+    background-color: #0a0a0a;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #fe0016 solid 2px;
+    position: fixed;
+    z-index: 1;
+    overflow-y: hidden;
+}
+
+.navbar_logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_logo_image {
+    background-color: transparent;
+    background-image: url("../images/Smash_Ball.svg_branco.png");
+        background-position: center;
+        background-size: 85%;
+        background-repeat: no-repeat;
+    width: 65px;
+    height: 65px;
+    padding: 15px;
+    border-radius: 65px;
+    transition: all ease-in-out 0.2s;
+}
+
+.navbar_logo_image:hover {
+    background-color: white;
+    background-image: url("../images/Smash_Ball.svg.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+}
+
+.navbar_logo_text {
+    background-color: transparent;
+    background-image: url("../images/ssbu-logo.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    width: 190px;
+    height: 125px;
+}
+
+.navbar_opcoes {
+    display: flex;
+    width: 100px;
+    justify-content: space-evenly;
+}
+
+a {
+    font-family: Carlito;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    font-weight: 200;
+    transition: all ease-in-out 0.2s;
+}
+
+a:hover {
+    color: #fe0016;
+}
+
+/* Página */
+
+.container_index {
+    padding-top: 15vh;
+    width: 100vw;
+    height: 900px;
+    background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+.container_fighter {
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    overflow: hidden;
+}
+
+.risca_fighter {
+    width: 1100px; 
+    height: 120px; 
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    position: absolute;
+    padding-left: 100px;
+    margin-left: 390px;
+    margin-top: 650px;
+    display: flex;
+    justify-content: center;
+    border-left: black solid 15px;
+}
+
+.image_logo {
+    width: 140px;
+}
+
+.text_name {
+    position: absolute;
+    color: white;
+    text-shadow: #0a0a0a 2px 2px 2px;
+    text-decoration: none;
+    font-family: Carlito;
+    font-size: 65px;
+    font-weight: 100;
+    padding-left: 100px;
+    margin-left: 360px;
+    margin-top: 665px;
+}
+
+.fighter_title {
+    width: auto;
+    height: 100%;
+    margin-left: 500px;
+    padding-left: 100px;
+}
+
+.video_fighter {
+    position: absolute;
+    padding-top: 200px;
+    padding-left: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sameGame {
+    background-color: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    background-color: #fe0016;
+    width: 465px;
+    height: 80px;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-bottom: solid 5px black;
+}
+
+.image_box {
+    width: 350px;
+    height: 750px;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image_character {
+    height: 300px;
+    transition: all ease-in-out 0.2s;
+    background-color: #bfbfbf;
+}
+
+.image_character:hover {
+    height: 350px;
+    background-color: #fe0016;
+}
+
+.rotulo {
+    background-color: #0a0a0a;
+    position: relative;
+    color: white;
+    font-family: Carlito;
+    font-size: 25px;
+    font-weight: 100;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.image_box {
+    width: 150px;
+    height: 435px;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-right: #0a0a0a solid 1px;
+    border-left: #0a0a0a solid 1px;
+}
+
+.h1samegame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0a0a;
+    border-top: #fe0016 solid 2px;
+}
+
+.dlc{
+    background-color: #fe0016;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
