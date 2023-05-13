@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Carlito:wght@700&family=Manjari&display=swap");
+
+* {
+    font-family: Carlito;
+    margin: 0;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #0a0a0a;
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.navbar_logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_logo_text {
+    background-color: transparent;
+    background-image: url("images/ssbu-logo.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    width: 220px;
+    height: 120px;
+}
+
+.navbar_opcoes {
+    padding: 25px;
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+}
+
+a {
+    font-family: Carlito;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    font-weight: 200;
+    transition: all ease-in-out 0.2s;
+}
+
+a:hover {
+    color: #fe0016;
+}
+
+/* container index */
+
+.container_index {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container_background {
+    background-image: url('images/thumb-1920-927337.png');
+        background-position-y: 2%;
+        background-position-x: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.container_info {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    background-color: #0a0a0a;
+    border-left: #fe0016 solid 2px;
+    border-right: #fe0016 solid 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    color: black;
+    background-color: white;
+    font-family: Carlito;
+    font-size: 20px;
+    width: 175px;
+    height: 45px;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 8px;
+    border: solid 2px #fe0016;
+    transition: all ease-in-out 0.2s;
+}
+
+.button:hover {
+    color: white;
+    background-color: #fe0016;
+    border: solid 2px white;
+}
+
+.opcoes {
+    color: aliceblue;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Carlito;
+    font-size: 20px;
+}
+
+.op_itens {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 15px;
+}
+
+.esqueci {
+    display: flex;
+    justify-content: end;
+    width: 250px;
+}
+
+.esqueci a {
+    font-size: 18px;
+}
+
+.campo {
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 23px;
+    font-weight: 200;
+    font-family: Carlito;
+}

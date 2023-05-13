@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMASH - Cadastrar</title>
+    <link rel="stylesheet" href="cadastro_login.css">
+    <link rel="shortcut icon" href="images/Smash_Ball.svg_branco.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="container_index">
+    <div class="container_background">
+    </div>
+    <div class="container_info">
+        <div class="navbar">
+            <div class="navbar_logo">
+                <div class="navbar_logo_text"></div>
+            </div>
+        </div>
+        <div class="opcoes">
+            <div class="op_itens">Email: <input type="text" id="inp_email" class="campo"></div>
+            <div class="op_itens">Senha: <input type="password" id="inp_senha" class="campo"></div>
+            <div class="op_itens">Confirmar senha: <input type="password" id="inp_Csenha" class="campo"></div>
+            <div class="op_itens"><button class="button" onclick="cadastrar()">Cadastrar</button></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+<script>
+
+    function cadastrar() {
+        var email = inp_email.value
+        var senha = inp_senha.value
+        var csenha = inp_Csenha.value
+
+        if (csenha != senha) {
+            alert("As senhas não coincidem")
+        } else if (email == "") {
+            alert("Insira um email")
+        } else if (senha == "") {
+            alert("Insira uma senha")
+        }
+    }
+
+</script>
