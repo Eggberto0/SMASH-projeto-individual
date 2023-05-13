@@ -101,9 +101,7 @@ a:hover {
 .risca_fighter {
     width: 1100px; 
     height: 120px; 
-    -webkit-transform: skew(20deg);
-    -moz-transform: skew(20deg);
-    -o-transform: skew(20deg);
+    transform: skew(15deg);
     position: absolute;
     padding-left: 100px;
     margin-left: 390px;
@@ -227,4 +225,5 @@ h1 {
     color: white;
     font-size: 15px;
     text-align: center;
+    overflow: hidden;
 }
