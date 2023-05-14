@@ -23,6 +23,92 @@
             <div class="op_itens">Email: <input type="text" id="inp_email" class="campo"></div>
             <div class="op_itens">Senha: <input type="password" id="inp_senha" class="campo"></div>
             <div class="op_itens">Confirmar senha: <input type="password" id="inp_Csenha" class="campo"></div>
+            <select name="Personagem" id="Personagem">
+                <option value="1">Mario</option>
+                <option value="2">Donkey Kong</option>
+                <option value="3">Link</option>
+                <option value="4">Samus</option>
+                <option value="5">Dark Samus</option>
+                <option value="6">Yoshi</option>
+                <option value="7">Kirby</option>
+                <option value="8">Fox</option>
+                <option value="9">Pikachu</option>
+                <option value="10">Luigi</option>
+                <option value="11">Ness</option>
+                <option value="12">Capitan Falcon</option>
+                <option value="13">Jigglypuff</option>
+                <option value="14">Peach</option>
+                <option value="15">Daisy</option>
+                <option value="16">Bowser</option>
+                <option value="17">Ice Climbers</option>
+                <option value="18">Sheik</option>
+                <option value="19">Zelda</option>
+                <option value="20">Dr. Mario</option>
+                <option value="21">Pichu</option>
+                <option value="22">Falco</option>
+                <option value="23">Marth</option>
+                <option value="24">Lucina</option>
+                <option value="25">Young Link</option>
+                <option value="26">Ganondorf</option>
+                <option value="27">Mewtwo</option>
+                <option value="28">Roy</option>
+                <option value="29">Chrom</option>
+                <option value="30">Mr. Game & Watch</option>
+                <option value="31">Meta Knight</option>
+                <option value="32">Pit</option>
+                <option value="33">Dark Pit</option>
+                <option value="34">Zero Suit Samus</option>
+                <option value="35">Wario</option>
+                <option value="36">Snake</option>
+                <option value="37">Ike</option>
+                <option value="38">Pokémon Trainer</option>
+                <option value="39">Diddy Kong</option>
+                <option value="40">Lucas</option>
+                <option value="41">Sonic</option>
+                <option value="42">King Dedede</option>
+                <option value="43">Olimar</option>
+                <option value="44">Lucario</option>
+                <option value="45">R.O.B.</option>
+                <option value="46">Toon Link</option>
+                <option value="47">Wolf</option>
+                <option value="48">Villager</option>
+                <option value="49">Mega Man</option>
+                <option value="50">Wii Fit TRAINER</option>
+                <option value="51">Rosalina & Luma</option>
+                <option value="52">Little Mac</option>
+                <option value="53">Greninja</option>
+                <option value="54">Mii Fighter</option>
+                <option value="55">Palutena</option>
+                <option value="56">Pac-Man</option>
+                <option value="57">Robin</option>
+                <option value="58">Shulk</option>
+                <option value="59">Bowser Jr.</option>
+                <option value="60">Duck Hunt</option>
+                <option value="60">Ryu</option>
+                <option value="62">Ken</option>
+                <option value="63">Cloud</option>
+                <option value="64">Corrin</option>
+                <option value="65">Bayonetta</option>
+                <option value="66">Inkling</option>
+                <option value="67">Ridley</option>
+                <option value="68">Simon</option>
+                <option value="69">Richter</option>
+                <option value="70">King K. Rool</option>
+                <option value="71">Isabelle</option>
+                <option value="72">Incineroar</option>
+                <option value="73">Piranha Plant</option>
+                <option value="74">Joker</option>
+                <option value="75">Hero</option>
+                <option value="77">Banjo & Kazooie</option>
+                <option value="78">Terry</option>
+                <option value="79">Byleth</option>
+                <option value="80">Min Min</option>
+                <option value="81">Steve</option>
+                <option value="82">Sephiroth</option>
+                <option value="83">Pyra/Mythra</option>
+                <option value="84">Kazuya</option>
+                <option value="85">Sora</option>
+            </select>
             <div class="op_itens"><button class="button" onclick="cadastrar()">Cadastrar</button></div>
         </div>
     </div>
@@ -37,6 +123,7 @@
         var email = inp_email.value
         var senha = inp_senha.value
         var csenha = inp_Csenha.value
+        var Personagem = Personagem.value
 
         if (csenha != senha) {
             alert("As senhas não coincidem")
@@ -44,7 +131,57 @@
             alert("Insira um email")
         } else if (senha == "") {
             alert("Insira uma senha")
+            
+        finalizarAguardar();
+                return false;
+            }
+            else {
+                setInterval(sumirMensagem, 5000)
+            }
+    
+            // Enviando o valor da nova input
+            fetch("/usuarios/cadastrar", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    // crie um atributo que recebe o valor recuperado aqui
+                    // Agora vá para o arquivo routes/usuario.js
+                    emailServer: emailVar,
+                    senhaServer: senhaVar,
+                    PersonagemServer: PersonagemVar
+                })
+            }).then(function (resposta) {
+    
+                console.log("resposta: ", resposta);
+    
+                if (resposta.ok) {
+                    //cardErro.style.display = "block";
+    
+                    //mensagem_erro.innerHTML = "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+    
+                    setTimeout(() => {
+                        window.location = "entrar.html";
+                    }, "2000")
+    
+                    limparFormulario();
+                    finalizarAguardar();
+                } else {
+                    throw ("Houve um erro ao tentar realizar o cadastro!");
+                }
+            }).catch(function (resposta) {
+                console.log(`#ERRO: ${resposta}`);
+                finalizarAguardar();
+            });
+    
+            return false;
         }
-    }
+    
+        //function sumirMensagem() {
+        //    cardErro.style.display = "none"
+        //}
+
+
 
 </script>
