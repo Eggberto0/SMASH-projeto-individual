@@ -25,7 +25,7 @@
 
 .navbar_logo_text {
     background-color: transparent;
-    background-image: url("../images/ssbu-logo.png");
+    background-image: url("images/ssbu-logo.png");
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
@@ -64,7 +64,7 @@ a:hover {
 }
 
 .container_background {
-    background-image: url('../images/thumb-1920-927337.png');
+    background-image: url('images/thumb-1920-927337.png');
         background-position-y: 2%;
         background-position-x: center;
         background-size: 100%;
