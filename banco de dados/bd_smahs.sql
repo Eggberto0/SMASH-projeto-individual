@@ -1,18 +1,19 @@
-create database smash_projeto_individual;
-use smash_projeto_individual;
-
-create table usuario (
-idUsuario int primary key auto_increment,
-email varchar(50),
-senha varchar(45),
-fkPersonagem int,
-constraint fkPersonagem foreign key (fkPersonagem) references personagem(idPersonagem)
-);
+create database smash;
+use smash;
 
 create table personagem (
 idPersonagem int primary key auto_increment,
 nome varchar(45),
 curtida int
+);
+
+create table usuario (
+idUsuario int primary key auto_increment,
+nome varchar(45),
+email varchar(50),
+senha varchar(45),
+fkPersonagem int,
+constraint fkPersonagem foreign key (fkPersonagem) references personagem(idPersonagem)
 );
 
 insert into personagem values
@@ -101,3 +102,8 @@ insert into personagem values
 	(null, 'Kazuya', 0),
 	(null, 'Sora', 0);
 
+select * from usuario;
+
+select * from personagem;
+
+UPDATE personagem SET curtida = curtida + 1 WHERE idPersonagem = 3;
